@@ -15,12 +15,16 @@ public class LeftObject : MonoBehaviour
     void Update()
     {
         GameObject palm = GameObject.Find("Palm Proxy Transform");
+        GameObject poke = GameObject.Find("Left_PokePointer(Clone)");
 
         if (palm == true)
         {
-            this.transform.position = palm.transform.position;
-            this.transform.rotation = palm.transform.rotation;
+            if (poke == true)
+            {
+                this.transform.rotation = poke.transform.rotation;
+            }
 
+            this.transform.position = palm.transform.position;
         }
     }
 }
