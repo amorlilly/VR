@@ -23,5 +23,10 @@ public class AttakedDelete : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+
+        if (other.gameObject.tag == "Player")
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
