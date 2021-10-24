@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AttakedDelete : MonoBehaviour
 {
@@ -14,6 +15,13 @@ public class AttakedDelete : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        GameObject Player=GameObject.Find("Main Camera");
+        
+
+        /*if (Player.transform.position.z - 2 >= this.gameObject.transform.position.z)
+        {
+            Destroy(this.gameObject);
+        }*/
         
     }
 
@@ -28,5 +36,6 @@ public class AttakedDelete : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        
     }
 }
