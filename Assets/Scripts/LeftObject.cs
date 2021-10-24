@@ -14,13 +14,18 @@ public class LeftObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameObject palm = GameObject.Find("Palm Proxy Transform");
+        GameObject leftHand = GameObject.Find("Left_HandSkeleton(Clone)");
 
-        if (palm == true)
+        if (leftHand == true)
         {
-            this.transform.position = palm.transform.position;
-            this.transform.rotation = palm.transform.rotation;
+            GameObject LeftPalm = leftHand.transform.Find("Palm Proxy Transform").gameObject;
 
+            if (LeftPalm == true)
+            {
+                this.transform.position = LeftPalm.transform.position;
+                this.transform.rotation = LeftPalm.transform.rotation;
+                
+            }
         }
     }
 }

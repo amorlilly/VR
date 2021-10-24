@@ -6,7 +6,8 @@ using UnityEngine;
 
 public class InPlayer : MonoBehaviour
 {
-    public bool InRange = false;
+    public bool InRange = false; 
+    public bool Go = false;
     public float speed=5.0f;
     private Vector3 PlayerPos;
 
@@ -14,11 +15,28 @@ public class InPlayer : MonoBehaviour
     private void Update()
     {
         PlayerPos = GameObject.Find("Main Camera").transform.position;
+        MeshRenderer mash = GetComponent<MeshRenderer>();
 
-        if (InRange==true)
+        if (Go == false)
         {
-            gameObject.transform.position = Vector3.MoveTowards(transform.position, PlayerPos, speed * Time.deltaTime);
+            StartCoroutine(ChangeGo());
         }
+
+        else if (Go == true)
+        {
+            if (InRange == true)
+            {
+                mash.enabled = true;
+                gameObject.transform.position =
+                    Vector3.MoveTowards(transform.position, PlayerPos, speed * Time.deltaTime);
+            }
+            else if (InRange == false)
+            {
+                mash.enabled = false;
+            }
+        }
+
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -26,7 +44,15 @@ public class InPlayer : MonoBehaviour
         if (other.gameObject.tag == "PlayerRange")
         {
             InRange = true;
-            Debug.Log("In");
         }
+    }
+
+    private IEnumerator ChangeGo()
+    {
+
+        yield return new WaitForSeconds(10);
+
+        Go = true;
+
     }
 }
