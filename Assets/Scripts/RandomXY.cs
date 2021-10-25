@@ -28,8 +28,8 @@ public class RandomXY : MonoBehaviour
         if (current >= span)
         {
             GameObject bullet = Instantiate(prefab) as GameObject;
-            this.transform.position =
-                new Vector3(Random.Range(minX, maxX), Random.Range(minY, maxY), this.transform.position.z);
+            //this.transform.position =
+            //    new Vector3(Random.Range(minX, maxX), Random.Range(minY, maxY), this.transform.position.z);
 
             bullet.transform.position = this.transform.position;
             bullet.transform.rotation = this.transform.rotation;
