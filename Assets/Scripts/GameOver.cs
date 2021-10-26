@@ -5,9 +5,6 @@ using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour
 {
-    public Image image;
-   
-    public Text gameover;
 
     // Start is called before the first frame update
     void Start()
@@ -17,17 +14,14 @@ public class GameOver : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (image.fillAmount <= 0)
+        if (Input.GetKeyDown(KeyCode.A))
         {
             Time.timeScale = 0.0f;
             GameObject bullet=GameObject.Find("Cube(Clone)");
             Destroy(bullet);
-            gameover.text = "GAME OVER";
 
-        }
-        else if(image.fillAmount > 0)
-        {
-            gameover.text = " ";
+
+
         }
     }
 }
