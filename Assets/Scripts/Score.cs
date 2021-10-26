@@ -21,7 +21,7 @@ public class Score : MonoBehaviour
         current = current + Time.deltaTime;
         if (span >= current)
         {
-            Debug.Log(score);
+            Debug.Log("Score"+score);
             current = 0.0f;
         }
     }

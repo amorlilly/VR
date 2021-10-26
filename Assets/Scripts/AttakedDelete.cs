@@ -7,11 +7,12 @@ using UnityEngine.UI;
 
 public class AttakedDelete : MonoBehaviour
 {
-    public GameObject Sowrd;
+    public GameObject CTRL;
+    private GameOver over;
 
     private Score score;
 
-    public float point = 10;
+    public float point = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,15 +23,22 @@ public class AttakedDelete : MonoBehaviour
     void Update()
     {
         GameObject Player=GameObject.Find("Main Camera");
-        
-        
+        CTRL=GameObject.Find("GameCTRL");
+        over = CTRL.GetComponent<GameOver>();
+
+        if (over.End == true)
+        {
+            Destroy(this.gameObject);
+        }
+
     }
 
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag=="Wepon")
         {
-            score = Sowrd.GetComponent<Score>();
+            CTRL=GameObject.Find("GameCTRL");
+            score = CTRL.GetComponent<Score>();
             score.score = score.score + point;
             Destroy(this.gameObject);
             
