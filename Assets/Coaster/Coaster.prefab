@@ -27,8 +27,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 880552571622105789}
-  m_LocalRotation: {x: -0.4675841, y: 0.525579, z: -0.30619174, w: 0.641388}
-  m_LocalPosition: {x: -45.38177, y: 21.082626, z: 58.383846}
+  m_LocalRotation: {x: -0.35655904, y: 0.3131766, z: -0.43041128, w: 0.76781}
+  m_LocalPosition: {x: -47.73246, y: 18.569878, z: 63.240753}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 880552572317938082}
@@ -96,8 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endTransform:
-    position: {x: -0.28309655, y: 7.465325, z: 9.096766}
-    rotation: {x: -0.65694445, y: -0.24800572, z: -0.44550073, w: 0.5553795}
+    position: {x: -0.69568634, y: 16.959301, z: 4.007924}
+    rotation: {x: -0.8014693, y: -0.34550261, z: -0.2429086, w: 0.42340335}
   curveType: 3
   curveStartStrength: 1.4142135
   curveEndStrength: 1.4142135
@@ -105,9 +105,9 @@ MonoBehaviour:
   _nextTrack: {fileID: 880552571670130371}
   outOfTrack: 0
   acceleration:
-    targetSpeed: 0
-    maxForce: 0
-    direction: 0
+    targetSpeed: 30
+    maxForce: 50
+    direction: 1
   brakes:
     targetSpeed: 0
     maxForce: 0
@@ -237,7 +237,7 @@ MonoBehaviour:
   outOfTrack: 0
   acceleration:
     targetSpeed: 20
-    maxForce: 3
+    maxForce: 2
     direction: 1
   brakes:
     targetSpeed: 0
@@ -499,7 +499,7 @@ MonoBehaviour:
   outOfTrack: 0
   acceleration:
     targetSpeed: 0
-    maxForce: 10
+    maxForce: 0
     direction: 0
   brakes:
     targetSpeed: 0
@@ -664,8 +664,8 @@ MonoBehaviour:
     maxForce: 0
     direction: 0
   brakes:
-    targetSpeed: 0
-    maxForce: 0
+    targetSpeed: 35
+    maxForce: 5
     direction: 0
   railMesh: {fileID: 4300004, guid: 3108c911ebb12874ea22e3db08c0afde, type: 3}
   tieMesh: {fileID: 4300002, guid: 3108c911ebb12874ea22e3db08c0afde, type: 3}
@@ -791,8 +791,8 @@ MonoBehaviour:
   _nextTrack: {fileID: 880552572926984236}
   outOfTrack: 0
   acceleration:
-    targetSpeed: 1.92
-    maxForce: 50
+    targetSpeed: 30
+    maxForce: 30
     direction: 1
   brakes:
     targetSpeed: 0
@@ -922,8 +922,8 @@ MonoBehaviour:
   _nextTrack: {fileID: 880552572704440221}
   outOfTrack: 0
   acceleration:
-    targetSpeed: 1.92
-    maxForce: 50
+    targetSpeed: 30
+    maxForce: 30
     direction: 1
   brakes:
     targetSpeed: 0
@@ -1053,7 +1053,7 @@ MonoBehaviour:
   _nextTrack: {fileID: 880552572909941572}
   outOfTrack: 0
   acceleration:
-    targetSpeed: 2
+    targetSpeed: 0
     maxForce: 0
     direction: 1
   brakes:
@@ -1319,8 +1319,8 @@ MonoBehaviour:
     maxForce: 0
     direction: 0
   brakes:
-    targetSpeed: 0
-    maxForce: 0
+    targetSpeed: 30
+    maxForce: 5
     direction: 0
   railMesh: {fileID: 4300004, guid: 3108c911ebb12874ea22e3db08c0afde, type: 3}
   tieMesh: {fileID: 4300002, guid: 3108c911ebb12874ea22e3db08c0afde, type: 3}
@@ -1447,7 +1447,7 @@ MonoBehaviour:
   outOfTrack: 0
   acceleration:
     targetSpeed: 20
-    maxForce: 5
+    maxForce: 10
     direction: 1
   brakes:
     targetSpeed: 0
@@ -1577,12 +1577,12 @@ MonoBehaviour:
   _nextTrack: {fileID: 880552573270527197}
   outOfTrack: 0
   acceleration:
-    targetSpeed: 0
-    maxForce: 0
+    targetSpeed: 40
+    maxForce: 10
     direction: 0
   brakes:
     targetSpeed: 0
-    maxForce: 0
+    maxForce: 5
     direction: 0
   railMesh: {fileID: 4300004, guid: 3108c911ebb12874ea22e3db08c0afde, type: 3}
   tieMesh: {fileID: 4300002, guid: 3108c911ebb12874ea22e3db08c0afde, type: 3}
@@ -1700,7 +1700,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endTransform:
     position: {x: 9.094313, y: -7.668976, z: 18.555927}
-    rotation: {x: 0.32439646, y: 0.4313402, z: -0.0469111, w: 0.8405426}
+    rotation: {x: 0.3243965, y: 0.43134025, z: -0.04691111, w: 0.84054273}
   curveType: 3
   curveStartStrength: 1.4142135
   curveEndStrength: 1.4142135
@@ -1840,7 +1840,7 @@ MonoBehaviour:
   outOfTrack: 0
   acceleration:
     targetSpeed: 0
-    maxForce: 0
+    maxForce: 10
     direction: 0
   brakes:
     targetSpeed: 0
@@ -1974,7 +1974,7 @@ MonoBehaviour:
     maxForce: 0
     direction: 0
   brakes:
-    targetSpeed: 0
+    targetSpeed: 30
     maxForce: 0
     direction: 0
   railMesh: {fileID: 4300004, guid: 3108c911ebb12874ea22e3db08c0afde, type: 3}
@@ -2232,8 +2232,8 @@ MonoBehaviour:
   _nextTrack: {fileID: 880552572622635694}
   outOfTrack: 0
   acceleration:
-    targetSpeed: 20
-    maxForce: 5
+    targetSpeed: 0
+    maxForce: 0
     direction: 0
   brakes:
     targetSpeed: 0
@@ -2498,7 +2498,7 @@ MonoBehaviour:
     maxForce: 0
     direction: 0
   brakes:
-    targetSpeed: 0
+    targetSpeed: 35
     maxForce: 0
     direction: 0
   railMesh: {fileID: 4300004, guid: 3108c911ebb12874ea22e3db08c0afde, type: 3}
@@ -2706,8 +2706,8 @@ MonoBehaviour:
     maxForce: 0
     direction: 0
   brakes:
-    targetSpeed: 0
-    maxForce: 0
+    targetSpeed: 25
+    maxForce: 5
     direction: 0
   railMesh: {fileID: 4300004, guid: 3108c911ebb12874ea22e3db08c0afde, type: 3}
   tieMesh: {fileID: 4300002, guid: 3108c911ebb12874ea22e3db08c0afde, type: 3}
@@ -2833,8 +2833,8 @@ MonoBehaviour:
   _nextTrack: {fileID: 880552571936824942}
   outOfTrack: 0
   acceleration:
-    targetSpeed: 1.92
-    maxForce: 0
+    targetSpeed: 30
+    maxForce: 30
     direction: 1
   brakes:
     targetSpeed: 0
@@ -2956,7 +2956,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endTransform:
     position: {x: -4.8244095, y: 4.083995, z: 23.842299}
-    rotation: {x: -0.0076670432, y: -0.061726194, z: 0.004103334, w: 0.9980552}
+    rotation: {x: -0.007667044, y: -0.0617262, z: 0.0041033346, w: 0.99805534}
   curveType: 3
   curveStartStrength: 1.4142135
   curveEndStrength: 1.4142135
@@ -3099,8 +3099,8 @@ MonoBehaviour:
     maxForce: 0
     direction: 0
   brakes:
-    targetSpeed: 0
-    maxForce: 0
+    targetSpeed: 30
+    maxForce: 5
     direction: 0
   railMesh: {fileID: 4300004, guid: 3108c911ebb12874ea22e3db08c0afde, type: 3}
   tieMesh: {fileID: 4300002, guid: 3108c911ebb12874ea22e3db08c0afde, type: 3}
@@ -3230,8 +3230,8 @@ MonoBehaviour:
     maxForce: 0
     direction: 0
   brakes:
-    targetSpeed: 50
-    maxForce: 2
+    targetSpeed: 40
+    maxForce: 5
     direction: 0
   railMesh: {fileID: 4300004, guid: 3108c911ebb12874ea22e3db08c0afde, type: 3}
   tieMesh: {fileID: 4300002, guid: 3108c911ebb12874ea22e3db08c0afde, type: 3}
@@ -3357,8 +3357,8 @@ MonoBehaviour:
   _nextTrack: {fileID: 880552573487522328}
   outOfTrack: 0
   acceleration:
-    targetSpeed: 1.92
-    maxForce: 50
+    targetSpeed: 20
+    maxForce: 25
     direction: 1
   brakes:
     targetSpeed: 0
@@ -3488,8 +3488,8 @@ MonoBehaviour:
   _nextTrack: {fileID: 880552572157851067}
   outOfTrack: 0
   acceleration:
-    targetSpeed: 0
-    maxForce: 0
+    targetSpeed: 50
+    maxForce: 20
     direction: 0
   brakes:
     targetSpeed: 0
@@ -3825,7 +3825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endTransform:
     position: {x: -1.1159792, y: 8.081584, z: 23.304127}
-    rotation: {x: -0.31590533, y: -0.2023451, z: -0.3885046, w: 0.8416201}
+    rotation: {x: -0.31590536, y: -0.20234513, z: -0.38850465, w: 0.8416202}
   curveType: 3
   curveStartStrength: 1.4142135
   curveEndStrength: 1.4142135
@@ -3964,8 +3964,8 @@ MonoBehaviour:
   _nextTrack: {fileID: 880552572465282410}
   outOfTrack: 0
   acceleration:
-    targetSpeed: 1.92
-    maxForce: 50
+    targetSpeed: 30
+    maxForce: 30
     direction: 1
   brakes:
     targetSpeed: 0
@@ -4380,8 +4380,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endTransform:
-    position: {x: 11.138296, y: 1.8875732, z: 16.706728}
-    rotation: {x: -0.10715722, y: 0.6040287, z: -0.03196159, w: 0.7890787}
+    position: {x: 8.684356, y: -3.500062, z: 17.32378}
+    rotation: {x: 0.050252505, y: 0.4728123, z: -0.24077477, w: 0.8461387}
   curveType: 3
   curveStartStrength: 1.4142135
   curveEndStrength: 1.4142135
@@ -4389,9 +4389,9 @@ MonoBehaviour:
   _nextTrack: {fileID: 880552571622105788}
   outOfTrack: 0
   acceleration:
-    targetSpeed: 0
-    maxForce: 0
-    direction: 0
+    targetSpeed: 30
+    maxForce: 60
+    direction: 1
   brakes:
     targetSpeed: 0
     maxForce: 0
@@ -4520,8 +4520,8 @@ MonoBehaviour:
   _nextTrack: {fileID: 880552571934300393}
   outOfTrack: 0
   acceleration:
-    targetSpeed: 1.92
-    maxForce: 50
+    targetSpeed: 30
+    maxForce: 30
     direction: 1
   brakes:
     targetSpeed: 0
@@ -4774,7 +4774,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endTransform:
     position: {x: 4.616388, y: 4.151402, z: 13.279674}
-    rotation: {x: -0.35638255, y: 0.35458225, z: -0.21036087, w: 0.83845776}
+    rotation: {x: -0.35638252, y: 0.35458222, z: -0.21036084, w: 0.83845764}
   curveType: 3
   curveStartStrength: 1.4142135
   curveEndStrength: 1.4142135
@@ -4917,8 +4917,8 @@ MonoBehaviour:
     maxForce: 0
     direction: 0
   brakes:
-    targetSpeed: 50
-    maxForce: 5
+    targetSpeed: 30
+    maxForce: 0
     direction: 0
   railMesh: {fileID: 4300004, guid: 3108c911ebb12874ea22e3db08c0afde, type: 3}
   tieMesh: {fileID: 4300002, guid: 3108c911ebb12874ea22e3db08c0afde, type: 3}
@@ -5045,7 +5045,7 @@ MonoBehaviour:
   outOfTrack: 0
   acceleration:
     targetSpeed: 0
-    maxForce: 0
+    maxForce: 10
     direction: 0
   brakes:
     targetSpeed: 0
@@ -5175,8 +5175,8 @@ MonoBehaviour:
   _nextTrack: {fileID: 880552573155541647}
   outOfTrack: 0
   acceleration:
-    targetSpeed: 500
-    maxForce: 100
+    targetSpeed: 0
+    maxForce: 0
     direction: 0
   brakes:
     targetSpeed: 0
@@ -5441,8 +5441,8 @@ MonoBehaviour:
     maxForce: 0
     direction: 0
   brakes:
-    targetSpeed: 0
-    maxForce: 0
+    targetSpeed: 30
+    maxForce: 5
     direction: 0
   railMesh: {fileID: 4300004, guid: 3108c911ebb12874ea22e3db08c0afde, type: 3}
   tieMesh: {fileID: 4300002, guid: 3108c911ebb12874ea22e3db08c0afde, type: 3}
@@ -5568,9 +5568,9 @@ MonoBehaviour:
   _nextTrack: {fileID: 880552572918788747}
   outOfTrack: 0
   acceleration:
-    targetSpeed: 50
-    maxForce: 10
-    direction: 0
+    targetSpeed: 40
+    maxForce: 30
+    direction: 1
   brakes:
     targetSpeed: 0
     maxForce: 0
@@ -5953,7 +5953,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endTransform:
     position: {x: -3.2846372, y: -3.68, z: 9.200181}
-    rotation: {x: 0, y: -0.29475537, z: 0, w: 0.9555727}
+    rotation: {x: 0, y: -0.2947554, z: 0, w: 0.95557284}
   curveType: 3
   curveStartStrength: 1.4142135
   curveEndStrength: 1.4142135
@@ -6092,8 +6092,8 @@ MonoBehaviour:
   _nextTrack: {fileID: 880552573555601702}
   outOfTrack: 0
   acceleration:
-    targetSpeed: 1.92
-    maxForce: 50
+    targetSpeed: 30
+    maxForce: 30
     direction: 1
   brakes:
     targetSpeed: 0
@@ -6354,8 +6354,8 @@ MonoBehaviour:
   _nextTrack: {fileID: 880552571825264308}
   outOfTrack: 0
   acceleration:
-    targetSpeed: 1.92
-    maxForce: 50
+    targetSpeed: 30
+    maxForce: 30
     direction: 1
   brakes:
     targetSpeed: 0

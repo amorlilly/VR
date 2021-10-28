@@ -12,6 +12,7 @@ TagManager:
   - HitArea
   - MoveStart
   - Target
+  - censor
   layers:
   - Default
   - TransparentFX
