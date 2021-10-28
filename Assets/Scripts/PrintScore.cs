@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,30 +8,36 @@ public class PrintScore : MonoBehaviour
 {
     public Text Board;
     public Text Tokuten;
+    public Canvas canvas;
+    private RectTransform rt;
+    private Score point;
 
-    private Score scores;
-    private GameOver over;
+    public bool end=false;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Update()
     {
-        
+        point = GameObject.Find("GameCTRL").GetComponent<Score>();
+
+        if (end == true)
+        {
+            Board.text = "SCORE";
+            Tokuten.text = point.score.ToString();
+
+        }
+        else if (end == false)
+        {
+            Board.text = " ";
+            Tokuten.text = " ";
+        }
+
+        Debug.Log(end);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        over = this.GetComponent<GameOver>();
-        scores = this.GetComponent<Score>();
-
-        Board.text = " ";
-        Tokuten.text = " ";
-
-        if (over.End == true)
+        if (other.gameObject.tag == "End")
         {
-            Board.text = "Score";
-
-            Tokuten.text = scores.score.ToString();
+            end = true;
         }
     }
 }

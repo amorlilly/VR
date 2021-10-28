@@ -5,6 +5,7 @@ using UnityEngine;
 public class StartAttack : MonoBehaviour
 {
     public GameObject Enemy;
+    private MeshRenderer mash;
 
     void Start()
     {
@@ -13,6 +14,8 @@ public class StartAttack : MonoBehaviour
 
     void Update()
     {
+        mash = this.GetComponent<MeshRenderer>();
+        mash.enabled=false;
     }
 
 
